@@ -363,7 +363,7 @@ header {
   margin-top: 5%;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 967px) {
   body {
     overflow-x: hidden;
   }
