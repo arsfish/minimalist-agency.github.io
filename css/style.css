@@ -31,7 +31,7 @@ header {
 .header-menu {
   position: absolute;
   top: 8vh;
-  left: 90%;
+  left: 90vw;
   box-sizing: border-box;
   cursor: pointer;
 }
@@ -46,10 +46,10 @@ header {
 .menu span {
   display: block;
   position: absolute;
-  height: 0.6vh;
+  height: 0.4vh;
   width: 100%;
   background: #333333;
-  opacity: 1;
+  opacity: 0.8;
 }
 .menu span:nth-child(1) {
   top: -30px;
@@ -120,7 +120,7 @@ header {
   display: flex;
   padding-right: 15%;
   padding-left: 15%;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 .target-text {
   position: relative;
@@ -132,7 +132,7 @@ header {
   margin-left: 20%;
   margin-top: 5%;
   box-shadow: 5vw 5vw 0px #333333;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 .target-text p {
   padding-top: 5%;
@@ -188,7 +188,7 @@ header {
 .ideas-paragraph {
   display: inline-block;
   margin-right: 5%;
-  width: 40%;
+  width: 50%;
   color: #a2a4aa;
   text-align: justify;
 }
@@ -202,7 +202,6 @@ header {
   position: absolute;
   z-index: -99;
   left: 80%;
-}
 .ideas-text-paragraph img {
   height: 70vh;
   width: auto;
@@ -210,7 +209,7 @@ header {
 .ideas-button {
   padding: 1vh 1.5vw 1vh 1.5vw;
   color: #ff0000;
-  border: 2px solid #dbdbdb;
+  border: 1px solid #dbdbdb;
   opacity: 0.7;
   font-size: calc(8px + 0.5vw);
   font-weight: 500;
@@ -225,10 +224,7 @@ header {
   position: relative;
   padding-right: 15%;
   padding-left: 15%;
-  margin-top: 10%;
-}
-.works h1 {
-  margin-top: 20%;
+  margin-top: 15vh;
 }
 .works-examples {
   position: relative;
@@ -237,7 +233,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 10%;
+  margin-top: 8vh;
   width: 120%;
 }
 
@@ -248,13 +244,12 @@ header {
 }
 
 .works-card:first-child {
-  border: 2px solid #dbdbdb;
+  border: 1.5px solid #dbdbdb;
   opacity: 0.7;
   min-height: 30vh;
-  padding: 3vh 8vh 0vmin 4vh;
-  max-height: 10vh;
+  padding: 3vh 4vh 0 4vh;
+  
 }
-
 .works-card h2 {
   font-size: calc(7px + 1vw);
   padding-bottom: 2vmin;
@@ -301,7 +296,7 @@ header {
   display: inline-block;
   padding-right: 15%;
   padding-left: 15%;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 .contact-text {
   display: block;
@@ -319,7 +314,7 @@ header {
 }
 .contact-form-info {
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 15vw;
   font-size: calc(7px + 0.5vw);
 }
 .contact-form input {
@@ -328,12 +323,11 @@ header {
   padding: 6vh 2vh 3vh 3vh;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #a2a4aa;
+  border-bottom: 1.5px solid #a2a4aa;
 }
 
 .contact-form-info:last-child {
   float: right;
-  
 }
 .contact-form-info:last-child input {
   padding-bottom: 75%;
@@ -374,11 +368,11 @@ header {
   transform: rotate(270deg);
 }
 .footer-img {
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 .footer-img img {
-  width: 20vw;
-  height: auto;
+  height: 25vh;
+  width: auto;
 }
 
 @media screen and (max-width: 500px) {
@@ -389,8 +383,13 @@ header {
     top: 5vw;
     left: 5%;
   }
+  .works-card:first-child {
+    min-height: 20vh;
+    padding: 2vh 4vh 0 2vh;
+    
+  }
 }
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 740px) {
   body {
     overflow-x: hidden;
   }
