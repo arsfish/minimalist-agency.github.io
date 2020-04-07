@@ -201,10 +201,10 @@ header {
 .ideas-img {
   position: absolute;
   z-index: -99;
-  left: 80%;
+  left: 85%;
 }
 .ideas-text-paragraph img {
-  height: 70vh;
+  height: 30vh;
   width: auto;
 }
 .ideas-button {
@@ -373,20 +373,6 @@ header {
   width: auto;
 }
 
-@media screen and (max-width: 500px) {
-  .header-tagline {
-    display: flex;
-    position: relative;
-    margin: 0 auto;
-    top: 5vw;
-    left: 5%;
-  }
-  .works-card:first-child {
-    min-height: 20vh;
-    padding: 2vh 4vh 0 2vh;
-    
-  }
-}
 @media screen and (max-width: 740px) {
   body {
     overflow-x: hidden;
@@ -397,6 +383,13 @@ header {
   }
   .container {
     padding-left: 0;
+  }
+  .header-tagline {
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    top: 5vw;
+    left: 5%;
   }
   .header-scroll img {
     width: 5vh;
@@ -432,5 +425,13 @@ header {
   }
   .contact-form-info {
     display: block;
+  }
+  .works-card:first-child {
+    min-height: 20vh;
+    padding: 2vh 4vh 0 2vh;
+  }
+  .works-card p {
+    font-size: calc(8px + 0.5vw);
+  line-height: calc(8px + 0.8vw);
   }
 }
