@@ -295,19 +295,16 @@ header {
 .contact {
   position: relative;
   display: inline-block;
-  padding-right: 15%;
   padding-left: 15%;
   margin-top: 15vh;
 }
 .contact-text {
   display: block;
-  margin-right: 5%;
   margin-top: 5vh;
   width: 40%;
   font-size: calc(8px + 0.5vw);
   color: #a2a4aa;
   text-align: justify;
-
 }
 .contact-form {
   position: relative;
@@ -315,14 +312,13 @@ header {
 }
 .contact-form-info {
   display: inline-block;
-  margin-left: 15vw;
+  margin-left: 6vw;
   font-size: calc(7px + 0.5vw);
 }
 .contact-form input {
   display: block;
-  margin-right: 1%;
-  padding: 6vh 2vh 3vh 3vh;
-  width: 100%;
+  padding: 6vh 2vh 3vh 5vh;
+  width: 95%;
   border: none;
   border-bottom: 1.5px solid #a2a4aa;
 }
@@ -336,13 +332,14 @@ header {
 .contact-button {
   float: right;
   padding: 1vh 3vh 1vh 3vh;
-  margin-top: 10%;
+  margin-top: 10vh;
   background-color: #d22425;
   color: #ffffff;
   font-size: calc(7px + 0.5vw);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1pt;
+  margin-right: 1vw;
 }
 .contact-button:hover {
   text-decoration: none;
