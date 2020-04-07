@@ -19,8 +19,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+          src = "./scripts/scroll.js"
+    </script>
   </head>
   <body>
+    <script>
+      src = "./scripts/scroll.js"
+    </script>
     <header>
       <div class="header">
         <div class="header-logo">
@@ -44,8 +50,10 @@
           </div>
         </div>
       </div>
-      <div class="header-scroll">
-        <a href="#content"><img src="img\scroll.png" alt="" /></a>
+      <div
+        class="header-scroll" onclick= "return currentYPosition(), elmYPosition('content'), smoothScroll('content');"
+      >
+      <img src="img\scroll.png" alt="" />
       </div>
     </header>
 
@@ -189,5 +197,8 @@
         <img src="img\footer.png" alt="footer" />
       </div>
     </footer>
+    <script>
+      src = "scripts/scroll.js"
+    </script>
   </body>
 </html>
