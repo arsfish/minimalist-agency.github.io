@@ -202,6 +202,7 @@ header {
   position: absolute;
   z-index: -99;
   left: 80%;
+}
 .ideas-text-paragraph img {
   height: 70vh;
   width: auto;
