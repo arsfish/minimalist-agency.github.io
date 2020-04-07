@@ -6,11 +6,11 @@ img {
   max-width: 100%;
 }
 h1 {
-  font-size: calc(50px + 1vw);
+  font-size: calc(30px + 1vw);
 }
 h3 {
   padding-left: 10%;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
   font-weight: 500;
   text-transform: uppercase;
   padding-bottom: 5%;
@@ -24,24 +24,29 @@ header {
   height: 100%;
   width: auto;
 }
+.header-logo img {
+  height: calc(75vh - 100px);
+  width: auto;
+}
 .header-menu {
   position: absolute;
   top: 8vh;
   left: 90%;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .menu {
   position: relative;
   display: block;
   float: right;
-  width: 3vw;
-  height: 3vh;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 .menu span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 0.6vh;
   width: 100%;
   background: #333333;
   opacity: 1;
@@ -72,20 +77,20 @@ header {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  line-height: 70px;
+  line-height: calc(40px + 1vw);
 }
 .header-text-line-1 {
   text-align: left;
   color: #dbdbdb;
-  font-size: calc(30px + 1vw);
+  font-size: calc(20px + 1vw);
   font-weight: 100;
 }
 .header-text-line-2 {
   text-transform: uppercase;
   color: #d22425;
   font-weight: 700;
-  font-size: calc(60px + 2vw);
-  line-height: 100px;
+  font-size: calc(30px + 2vw);
+  line-height: calc(18px + 1vw);
 }
 .header-text .text-img {
   display: inline;
@@ -94,7 +99,7 @@ header {
   flex-wrap: wrap;
   text-align: left;
   color: #dbdbdb;
-  font-size: calc(55px + 1.5vw);
+  font-size: calc(25px + 1.5vw);
   font-weight: 100;
 }
 .header-scroll {
@@ -103,7 +108,9 @@ header {
   margin-bottom: 10%;
   cursor: pointer;
 }
-
+.header-scroll img {
+  width: 3vw;
+}
 .container {
   padding-left: 5%;
   margin-top: 10%;
@@ -124,22 +131,22 @@ header {
   height: calc(100% - 50px);
   margin-left: 20%;
   margin-top: 5%;
-  box-shadow: 60px 60px 0px #333333;
+  box-shadow: 5vw 5vw 0px #333333;
 }
 .target-text p {
   padding-top: 5%;
   padding-left: 10%;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(10px + 0.5vw);
   color: #a2a4aa;
   text-align: justify;
 }
 .target-text .target-text-background {
   position: absolute;
   z-index: -99;
-  font-size: calc(85px + 1vw);
+  font-size: calc(40px + 1vw);
   opacity: 0.07;
   top: -2%;
-  left: -30%;
+  left: -20%;
   margin: 0 auto;
   width: 140%;
 }
@@ -148,7 +155,7 @@ header {
   position: relative;
 }
 .ideas-text p {
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(8px + 0.5vw);
   color: #a2a4aa;
   text-align: justify;
   padding-bottom: 1em;
@@ -156,14 +163,14 @@ header {
 .ideas-text .ideas-text-background {
   position: absolute;
   z-index: -99;
-  font-size: calc(85px + 1vw);
+  font-size: calc(40px + 1vw);
   opacity: 0.07;
   top: 0;
   left: -7%;
   margin: 0 auto;
 }
 .ideas-subtitle {
-  font-size: calc(16px + 0.5vw);
+  font-size: calc(9px + 0.5vw);
   color: #a2a4aa;
   text-align: left;
   padding-left: 20%;
@@ -189,7 +196,7 @@ header {
   padding-top: 0.8em;
 }
 .uppercase-letter {
-  font-size: 100pt;
+  font-size: calc(30px + 1vw);
   font-weight: 700;
   color: #000000;
   line-height: 0em;
@@ -199,11 +206,15 @@ header {
   z-index: -99;
   left: 80%;
 }
+.ideas-img img {
+  height: 50vh;
+}
 .ideas-button {
-  padding: 10px 30px 10px 30px;
+  padding: 1vw 3vw 1vw 3vw;
   color: #ff0000;
   border: 2px solid #dbdbdb;
-  font-size: calc(16px + 0.5vw);
+  opacity: 0.7;
+  font-size: calc(8px + 0.5vw);
   font-weight: 500;
   margin-left: 10%;
 }
@@ -240,25 +251,26 @@ header {
 
 .works-card:first-child {
   border: 2px solid #dbdbdb;
+  opacity: 0.7;
   min-height: 30vmin;
   padding: 3vmin 8vmin 0vmin 4vmin;
 }
 
 .works-card h2 {
-  font-size: calc(14px + 1.2vw);
+  font-size: calc(10px + 1.2vw);
   padding-bottom: 2vmin;
   text-align: justify;
 }
 .works-card p {
   width: 100%;
-  font-size: calc(14px + 0.5vw);
-  line-height: calc(14px + 1vw);
+  font-size: calc(10px + 0.5vw);
+  line-height: calc(10px + 1vw);
   text-align: justify;
   color: #a2a4aa;
   overflow: hidden;
 }
 .works-card img {
-  width: 100%;
+  width: 100%
 }
 .works-background {
   position: absolute;
@@ -363,16 +375,18 @@ header {
   margin-top: 5%;
 }
 
-@media screen and (max-width: 840px) {
-  body {
-    overflow-x: hidden;
-  }
+@media screen and (max-width: 500px) {
   .header-tagline {
     display: flex;
     position: relative;
     margin: 0 auto;
     top: 5vw;
-    left: 10%;
+    left: 5%;
+  }
+}
+@media screen and (max-width: 840px) {
+  body {
+    overflow-x: hidden;
   }
   img {
     width: calc(20vh + 5%);
