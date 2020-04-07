@@ -40,7 +40,7 @@ header {
   display: block;
   float: right;
   width: 30px;
-  height: 30px;
+  height: 10px;
   cursor: pointer;
 }
 .menu span {
@@ -132,18 +132,19 @@ header {
   margin-left: 20%;
   margin-top: 5%;
   box-shadow: 5vw 5vw 0px #333333;
+  margin-bottom: 10vh;
 }
 .target-text p {
   padding-top: 5%;
   padding-left: 10%;
-  font-size: calc(10px + 0.5vw);
+  font-size: calc(7px + 0.5vw);
   color: #a2a4aa;
   text-align: justify;
 }
 .target-text .target-text-background {
   position: absolute;
   z-index: -99;
-  font-size: calc(40px + 1vw);
+  font-size: calc(45px + 1vw);
   opacity: 0.07;
   top: -2%;
   left: -20%;
@@ -155,7 +156,7 @@ header {
   position: relative;
 }
 .ideas-text p {
-  font-size: calc(8px + 0.5vw);
+  font-size: calc(7px + 0.5vw);
   color: #a2a4aa;
   text-align: justify;
   padding-bottom: 1em;
@@ -163,19 +164,19 @@ header {
 .ideas-text .ideas-text-background {
   position: absolute;
   z-index: -99;
-  font-size: calc(40px + 1vw);
+  font-size: calc(45px + 1vw);
   opacity: 0.07;
   top: 0;
   left: -7%;
   margin: 0 auto;
 }
 .ideas-subtitle {
-  font-size: calc(9px + 0.5vw);
+  font-size: calc(8px + 0.5vw);
   color: #a2a4aa;
   text-align: left;
   padding-left: 20%;
-  padding-top: 0.5em;
-  padding-bottom: 5em;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
   width: 60%;
 }
 .ideas-text-paragraph {
@@ -190,13 +191,9 @@ header {
   width: 40%;
   color: #a2a4aa;
   text-align: justify;
-  margin-bottom: 3%;
-}
-.ideas-paragraph-2 {
-  padding-top: 0.8em;
 }
 .uppercase-letter {
-  font-size: calc(30px + 1vw);
+  font-size: calc(40px + 1vw);
   font-weight: 700;
   color: #000000;
   line-height: 0em;
@@ -206,11 +203,12 @@ header {
   z-index: -99;
   left: 80%;
 }
-.ideas-img img {
-  height: 50vh;
+.ideas-text-paragraph img {
+  height: 70vh;
+  width: auto;
 }
 .ideas-button {
-  padding: 1vw 3vw 1vw 3vw;
+  padding: 1vh 1.5vw 1vh 1.5vw;
   color: #ff0000;
   border: 2px solid #dbdbdb;
   opacity: 0.7;
@@ -252,22 +250,24 @@ header {
 .works-card:first-child {
   border: 2px solid #dbdbdb;
   opacity: 0.7;
-  min-height: 30vmin;
-  padding: 3vmin 8vmin 0vmin 4vmin;
+  min-height: 30vh;
+  padding: 3vh 8vh 0vmin 4vh;
+  max-height: 10vh;
 }
 
 .works-card h2 {
-  font-size: calc(10px + 1.2vw);
+  font-size: calc(7px + 1vw);
   padding-bottom: 2vmin;
   text-align: justify;
 }
 .works-card p {
   width: 100%;
-  font-size: calc(10px + 0.5vw);
-  line-height: calc(10px + 1vw);
+  font-size: calc(6px + 0.5vw);
+  line-height: calc(6px + 0.8vw);
   text-align: justify;
   color: #a2a4aa;
   overflow: hidden;
+  word-wrap: break-word;
 }
 .works-card img {
   width: 100%
@@ -275,7 +275,7 @@ header {
 .works-background {
   position: absolute;
   z-index: -99;
-  font-size: calc(85px + 1vw);
+  font-size: calc(45px + 1vw);
   opacity: 0.03;
   top: 1%;
   left: 10%;
@@ -288,7 +288,7 @@ header {
   text-transform: uppercase;
   padding: 3vmin 5vmin 3vmin 4vmin;
   color: #ff0000;
-  font-size: calc(16px + 0.5vw);
+  font-size: calc(8px + 0.5vw);
   font-weight: 700;
 }
 .works-portfolio-button:hover {
@@ -301,31 +301,31 @@ header {
   display: inline-block;
   padding-right: 15%;
   padding-left: 15%;
-  margin-top: 10%;
+  margin-top: 20vh;
 }
 .contact-text {
   display: block;
   margin-right: 5%;
-  margin-top: 5%;
+  margin-top: 5vh;
   width: 40%;
-  font-size: calc(16px + 0.5vw);
+  font-size: calc(8px + 0.5vw);
   color: #a2a4aa;
   text-align: justify;
-  margin-bottom: 3%;
+
 }
 .contact-form {
   position: relative;
-  margin-left: 15%;
+  margin-left: 10vw;
 }
 .contact-form-info {
   display: inline-block;
   margin-left: 5%;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(7px + 0.5vw);
 }
 .contact-form input {
   display: block;
   margin-right: 1%;
-  padding: 15% 10% 10% 5%;
+  padding: 6vh 2vh 3vh 3vh;
   width: 100%;
   border: none;
   border-bottom: 2px solid #a2a4aa;
@@ -333,22 +333,21 @@ header {
 
 .contact-form-info:last-child {
   float: right;
-  margin-right: 10%;
+  
 }
 .contact-form-info:last-child input {
   padding-bottom: 75%;
 }
 .contact-button {
   float: right;
-  padding: 10px 30px 10px 30px;
+  padding: 1vh 3vh 1vh 3vh;
   margin-top: 10%;
   background-color: #d22425;
   color: #ffffff;
-  border: 2px solid #dbdbdb;
-  font-size: calc(14px + 0.5vw);
+  font-size: calc(7px + 0.5vw);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 2pt;
+  letter-spacing: 1pt;
 }
 .contact-button:hover {
   text-decoration: none;
@@ -361,18 +360,25 @@ header {
   margin-left: 40%;
   margin-top: 20vh;
 }
+.contact-form-img img {
+  width: 2vh;
+}
 .contact-background {
   position: absolute;
   top: 30%;
   left: calc(8vw - 100px);
   z-index: -99;
-  font-size: calc(85px + 1vw);
+  font-size: calc(45px + 1vw);
   opacity: 0.07;
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 .footer-img {
-  margin-top: 5%;
+  margin-top: 5vh;
+}
+.footer-img img {
+  width: 20vw;
+  height: auto;
 }
 
 @media screen and (max-width: 500px) {
