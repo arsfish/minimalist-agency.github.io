@@ -43,27 +43,38 @@ header {
   height: 10px;
   cursor: pointer;
 }
-.menu span {
-  display: block;
+
+#menu-bar {
+  cursor: pointer;
   position: absolute;
-  height: 0.4vh;
-  width: 100%;
-  background: #333333;
-  opacity: 0.8;
+  top: 0;
+  right: 0;
+  margin-top: -5vh;
 }
-.menu span:nth-child(1) {
-  top: -30px;
-  width: 35px;
-  left: -5px;
+.bar1,
+.bar2,
+.bar3 {
+  width: calc(25px + 0.8vw);
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
-.menu span:nth-child(2),
-.menu span:nth-child(3) {
-  top: -20px;
-  width: 25px;
-  left: 5px;
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 9px);
+  transform: rotate(-45deg) translate(-8px, 8px);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
-.menu span:nth-child(4) {
-  top: -10px;
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 .header-tagline {
@@ -249,7 +260,6 @@ header {
   opacity: 0.7;
   min-height: 30vh;
   padding: 3vh 4vh 0 4vh;
-  
 }
 .works-card h2 {
   font-size: calc(7px + 1vw);
@@ -266,7 +276,7 @@ header {
   word-wrap: break-word;
 }
 .works-card img {
-  width: 100%
+  width: 100%;
 }
 .works-background {
   position: absolute;
@@ -432,6 +442,6 @@ header {
   }
   .works-card p {
     font-size: calc(8px + 0.5vw);
-  line-height: calc(8px + 0.8vw);
+    line-height: calc(8px + 0.8vw);
   }
 }

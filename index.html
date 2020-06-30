@@ -20,9 +20,11 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/burger-menu.js"></script>
   </head>
   <body>
     <script src="scripts/scroll.js"></script>
+    <script src="scripts/burger-menu.js"></script>
     <header>
       <div class="header">
         <div class="header-logo">
@@ -30,10 +32,15 @@
         </div>
         <div class="header-menu">
           <div class="menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <div id="menu-bar">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div id="nav">
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
         <div class="header-tagline">
@@ -47,9 +54,10 @@
         </div>
       </div>
       <div
-        class="header-scroll" onclick= "return currentYPosition(), elmYPosition('content'), smoothScroll('content');"
+        class="header-scroll"
+        onclick="return currentYPosition(), elmYPosition('content'), smoothScroll('content');"
       >
-      <img src="img\scroll.png" alt="" />
+        <img src="img\scroll.png" alt="" />
       </div>
     </header>
 
