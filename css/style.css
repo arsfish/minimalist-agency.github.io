@@ -6,14 +6,17 @@ img {
   max-width: 100%;
 }
 h1 {
-  font-size: calc(30px + 1vw);
+  font-size: calc(24px + 1vw);
 }
 h3 {
   padding-left: 10%;
   font-size: calc(10px + 0.5vw);
   font-weight: 500;
   text-transform: uppercase;
-  padding-bottom: 5%;
+  padding-bottom: 3vh;
+}
+a {
+  text-decoration: none;
 }
 header {
   display: block;
@@ -80,28 +83,28 @@ header {
 .header-tagline {
   display: block;
   position: absolute;
-  top: 20%;
+  top: 20vh;
   left: 30%;
 }
 .header-text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  line-height: calc(40px + 1vw);
+  line-height: 2vh;
+  margin: 0 auto;
+  padding: 0;
 }
 .header-text-line-1 {
   text-align: left;
   color: #dbdbdb;
-  font-size: calc(20px + 1vw);
+  font-size: calc(20px + 2vh);
   font-weight: 100;
 }
 .header-text-line-2 {
   text-transform: uppercase;
   color: #d22425;
   font-weight: 700;
-  font-size: calc(30px + 2vw);
-  line-height: calc(18px + 1vw);
+  font-size: calc(24px + 2vw);
 }
 .header-text .text-img {
   display: inline;
@@ -110,16 +113,24 @@ header {
   flex-wrap: wrap;
   text-align: left;
   color: #dbdbdb;
-  font-size: calc(25px + 1.5vw);
+  font-size: calc(20px + 1.5vw);
   font-weight: 100;
+  line-height: calc(20px + 1.5vw);
 }
 .header-scroll {
-  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  margin-left: 50%;
   margin-top: 20vh;
   margin-bottom: 10%;
-  cursor: pointer;
+}
+.header-scroll:focus {
+  outline: none;
 }
 .header-scroll img {
+  cursor: pointer;
   width: 3vw;
 }
 .container {
@@ -139,7 +150,7 @@ header {
 }
 .target-img {
   vertical-align: middle;
-  height: calc(100% - 50px);
+  height: calc(100% - 40px);
   margin-left: 20%;
   margin-top: 5%;
   box-shadow: 5vw 5vw 0px #333333;
@@ -215,7 +226,7 @@ header {
   left: 85%;
 }
 .ideas-text-paragraph img {
-  height: 30vh;
+  height: 50vh;
   width: auto;
 }
 .ideas-button {
@@ -384,15 +395,15 @@ header {
 }
 
 @media screen and (max-width: 740px) {
-  body {
-    overflow-x: hidden;
-  }
   img {
     width: calc(20vh + 5%);
     height: auto;
   }
   .container {
     padding-left: 0;
+  }
+  .header-text {
+    line-height: 0vh;
   }
   .header-tagline {
     display: flex;
@@ -402,10 +413,10 @@ header {
     left: 5%;
   }
   .header-scroll img {
-    width: 5vh;
+    width: 10vw;
   }
   .header-scroll {
-    margin-top: calc(10vh - 20px);
+    margin-top: calc(15vh - 50px);
   }
   .target,
   .ideas {

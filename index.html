@@ -6,25 +6,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <title>NEXT</title>
+        <title>NEXT</title>
     <link
       href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="scripts/scroll.js"></script>
+    <script src="scripts/scroll-nav.js"></script>
     <script src="scripts/burger-menu.js"></script>
   </head>
   <body>
-    <script src="scripts/scroll.js"></script>
-    <script src="scripts/burger-menu.js"></script>
     <header>
       <div class="header">
         <div class="header-logo">
@@ -53,12 +44,9 @@
           </div>
         </div>
       </div>
-      <div
-        class="header-scroll"
-        onclick="return currentYPosition(), elmYPosition('content'), smoothScroll('content');"
-      >
-        <img src="img\scroll.png" alt="" />
-      </div>
+      <button class="header-scroll">
+        <img id="header-btn" src="img\scroll.png" alt="" />
+      </button>
     </header>
 
     <container>
@@ -201,5 +189,7 @@
         <img src="img\footer.png" alt="footer" />
       </div>
     </footer>
+    <script src="scripts/scroll-nav.js"></script>
+    <script src="scripts/burger-menu.js"></script>
   </body>
 </html>
